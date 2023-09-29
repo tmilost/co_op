@@ -58,7 +58,7 @@ defineProps({
 @keyframes floatBubble {
   0% {
     opacity: 0;
-    top: 20px;
+    top: 0px;
   }
 
   100% {
