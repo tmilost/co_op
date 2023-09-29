@@ -14,20 +14,20 @@ defineProps({
 <template>
   <div class="animation">
     <div class="ghost-animation-one">
-      <img class="ghost-cute" :src="giphyCute" alt="giphy">
+      <img class="ghost-cute" :src="giphyCute" alt="giphy" width="100" height="100" rel="preload" fetchpriority="low">
     </div>
     <div class="ghost-animation-two">
-      <img class="ghost" :src="giphy" alt="giphy">
+      <img class="ghost" :src="giphy" alt="giphy" width="100" height="100" rel="preload" fetchpriority="low">
     </div>
     <div class="ghost-animation-three">
-      <img class="ghost-cat" :src="giphyCat" alt="giphy">
+      <img class="ghost-cat" :src="giphyCat" alt="giphy" width="120"  height="80" rel="preload" fetchpriority="low">
     </div>
   </div>
   <div class="hello">
     <h1>{{ msg }}</h1>
     <div class="welcome-logo">
-      <img class="welcome-logo-coop" :src="coopLogo" alt="coop logo">
-      <img class="welcome-logo-zuhlke" :src="zuhlkeLogo" alt="zuhlke logo">
+      <img class="welcome-logo-coop" :src="coopLogo" width="100" height="100" alt="coop logo" rel="preload" fetchpriority="low">
+      <img class="welcome-logo-zuhlke" :src="zuhlkeLogo" width="100" height="100" alt="zuhlke logo" rel="preload" fetchpriority="low">
     </div>
   </div>
 </template>
@@ -65,18 +65,6 @@ defineProps({
     opacity: 1;
     top: -290px;
   }
-}
-
-.ghost-cute {
-  width: 100px;
-}
-
-.ghost {
-  width: 100px;
-}
-
-.ghost-cat {
-  width: 120px;
 }
 
 .hello {
